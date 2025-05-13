@@ -51,9 +51,7 @@ CORS_ALLOW_ALL_ORIGINS = True  # For development only
 CORS_URLS_REGEX = r'^/api/.*$'
 
 # Add media types to CORS
-CORS_ALLOWED_ORIGINS = [
-    "http://172.17.100.14:3326",
-]
+CORS_ALLOWED_ORIGINS = ["http://172.17.100.14:3342"]
 
 # Application definition
 
@@ -135,8 +133,8 @@ WSGI_APPLICATION = 'app.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',  # Use MySQL engine
-        'NAME': 'musico1_db1',                 # Your database name
-        'USER': 'musico1',                     # Your MySQL username
+        'NAME': 'durban2_db1',                 # Your database name
+        'USER': 'durban2',                     # Your MySQL username
         'PASSWORD': '123456',                  # Your MySQL password
         'HOST': 'localhost',                   # MySQL server host (localhost if on the same machine)
         'PORT': '3306',                        # MySQL default port
@@ -183,8 +181,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-MEDIA_ROOT = '/home/musico1/development/app/media/'
-FORCE_SCRIPT_NAME = '/musico1'
+MEDIA_ROOT = '/home/durban2/development/app/media/'
+FORCE_SCRIPT_NAME = '/durban2'
 USE_X_FORWARDED_HOST = True
 USE_X_FORWARDED_PORT = True
 # Default primary key field type
